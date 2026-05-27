@@ -34,6 +34,7 @@ import {
 import { Language, YogaAsana, ChatMessage, CommonSymptom } from "./types";
 import { translations } from "./translations";
 import suryaNamaskaraImg from "./assets/surya_namaskara.png";
+import sthiraLogoImg from "./assets/logo.png";
 
 // Initial set of common issues that can instantly be queried
 const COMMON_SYMPTOMS: CommonSymptom[] = [
@@ -1160,8 +1161,8 @@ export default function App() {
 
           <header className="flex flex-col items-center text-center mt-6">
             {/* Self Improvement Material Symbol represented in HTML mockup */}
-            <div className="w-20 h-20 mb-5 rounded-full bg-[#b0ceae] flex items-center justify-center ambient-bloom">
-              <span className="text-4xl text-[#4a654a]">🧘</span>
+            <div className="w-20 h-20 mb-5 rounded-full bg-white flex items-center justify-center ambient-bloom shadow-sm overflow-hidden p-2">
+              <img src={sthiraLogoImg} alt="Sthira Sukham Logo" className="w-full h-full object-contain" />
             </div>
 
             <h1 className="text-3xl font-bold text-[#4a654a] tracking-tight mb-2">Sthira Sukham</h1>
@@ -1268,8 +1269,8 @@ export default function App() {
               <ArrowLeft className="w-4 h-4 text-[#4a654a]" />
             </button>
           )}
-          <div onClick={() => setActiveTab("home")} className="w-8 h-8 rounded-full bg-[#ccebc8] flex items-center justify-center cursor-pointer hover:scale-105 transition-transform">
-            <span className="text-sm">🧘</span>
+          <div onClick={() => setActiveTab("home")} className="w-10 h-10 rounded-full bg-white shadow-sm flex items-center justify-center cursor-pointer hover:scale-105 transition-transform overflow-hidden p-1">
+            <img src={sthiraLogoImg} alt="Logo" className="w-full h-full object-contain" />
           </div>
           <div>
             <h1 className="text-lg md:text-xl font-bold text-[#4a654a] tracking-tight flex items-center gap-1.5 cursor-pointer" onClick={() => setActiveTab("home")}>
@@ -2275,8 +2276,8 @@ export default function App() {
 
       {/* Elegant, nature-loving Sticky Footer conforming to screens */}
       <footer className="w-full bg-[#f5f3ee] border-t border-[#c3c8bf]/15 px-4 md:px-8 py-8 flex flex-col items-center text-center gap-4 mt-auto">
-        <div className="font-bold text-base text-[#4a654a] flex items-center gap-1">
-          <span>🧘</span>
+        <div className="font-bold text-base text-[#4a654a] flex items-center gap-2">
+          <img src={sthiraLogoImg} alt="Logo" className="w-6 h-6 object-contain" />
           <span>Sthira Sukham</span>
         </div>
 
