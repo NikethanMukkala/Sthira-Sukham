@@ -1,0 +1,6 @@
+{
+  "name": "Sthira Sukham",
+  "description": "A multilingual yoga asana recommender and wellness companion tailored for finding steady, easeful practices for any health issue, optimized in English, Telugu, and Hindi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #4a654a;
+  --color-primary-container: #8ba889;
+  --color-secondary: #5b5b81;
+  --color-secondary-container: #d2d0fd;
+  --color-tertiary: #3b6378;
+  --color-tertiary-container: #7da6bd;
+  --color-background: #fbf9f4;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f5f3ee;
+  --color-surface-container: #f0eee9;
+  --color-surface-container-high: #eae8e3;
+  --color-surface-container-highest: #e4e2dd;
+  --color-on-surface: #1b1c19;
+  --color-on-surface-variant: #434841;
+  --color-outline-variant: #c3c8bf;
+  --color-primary-fixed: #ccebc8;
+  --color-primary-fixed-dim: #b0ceae;
+  --color-on-primary-fixed-variant: #334d34;
+  --color-tertiary-fixed: #c2e8ff;
+  --color-tertiary-fixed-dim: #a3cce4;
+  --color-secondary-fixed: #e2dfff;
+  --color-secondary-fixed-dim: #c4c2ef;
+
+  --font-sans: "Noto Sans", "Inter", sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+/* Custom visual utilities for the serene tone */
+.ambient-bloom {
+  box-shadow: 0 10px 40px -10px rgba(74, 101, 74, 0.08);
+}
+
+.ambient-bloom-lg {
+  box-shadow: 0 20px 50px -10px rgba(74, 101, 74, 0.12);
+}
+
+.ambient-bloom-lavender {
+  box-shadow: 0 10px 40px -10px rgba(91, 91, 129, 0.08);
+}
+
+/* Base resets & styles matching Sthira Sukham philosophy */
+html, body {
+  background-color: #fbf9f4;
+  color: #1b1c19;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Page entrance animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Zen organic breathing background animations */
+@keyframes float-blob-1 {
+  0% { transform: translate(0px, 0px) scale(1); }
+  33% { transform: translate(30px, -50px) scale(1.1) rotate(0deg); }
+  66% { transform: translate(-20px, 20px) scale(0.95) rotate(90deg); }
+  100% { transform: translate(0px, 0px) scale(1) rotate(0deg); }
+}
+
+@keyframes float-blob-2 {
+  0% { transform: translate(0px, 0px) scale(1); }
+  33% { transform: translate(-40px, 30px) scale(0.9) rotate(0deg); }
+  66% { transform: translate(30px, -20px) scale(1.15) rotate(-90deg); }
+  100% { transform: translate(0px, 0px) scale(1) rotate(0deg); }
+}
+
+@keyframes float-blob-3 {
+  0% { transform: translate(0px, 0px) scale(1); }
+  33% { transform: translate(20px, 40px) scale(1.05) rotate(0deg); }
+  66% { transform: translate(-30px, -30px) scale(0.9) rotate(180deg); }
+  100% { transform: translate(0px, 0px) scale(1) rotate(0deg); }
+}
+
+.animate-blob-1 {
+  animation: float-blob-1 25s infinite alternate ease-in-out;
+}
+
+.animate-blob-2 {
+  animation: float-blob-2 28s infinite alternate ease-in-out;
+}
+
+.animate-blob-3 {
+  animation: float-blob-3 22s infinite alternate ease-in-out;
+}
+
